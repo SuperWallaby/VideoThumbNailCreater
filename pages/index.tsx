@@ -10,9 +10,6 @@ const VideoThumbNailGenerator = dynamic(
  }
 );
 
-const Configer = dynamic(() => import("../components/configer/Configer"), {
- ssr: false,
-});
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import { IEditData } from "../components/videoThumbNailGenderator/helpers/eidtVidoe";
