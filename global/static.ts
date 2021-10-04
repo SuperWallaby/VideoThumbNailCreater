@@ -5,6 +5,12 @@ export const LanguageInfo = {
   ja: "ビデオサムネイルメーカー",
   chi: "视频缩略图制作器",
  },
+ description: {
+  ko: "동영상을 여기 업로드하시면 최적화된 동영상 썸네일을 제작해 드립니다.",
+  en: "Upload your video here and we'll create an optimized video thumbnail.",
+  ja: "ここに動画をアップロードすると、最適化された動画サムネイルが作成されます。",
+  chi: "在此处上传您的视频，我们将创建优化的视频缩略图。",
+ },
 };
 
 export const langInfo = LanguageInfo;

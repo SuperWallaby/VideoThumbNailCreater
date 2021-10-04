@@ -45,7 +45,7 @@ const Home: NextPage = () => {
     <article className=" prose lg:prose-lg">
      <h1>{s("title")}</h1>
      <b>{s("description")}</b>
-     <h3>기본규칙</h3>
+     <h3>사용방법</h3>
      <ul>
       <li>
        결과값이 마음에 들지 않는다면, 설정 수정하기 버튼을 통해서 결과를 바꿀 수
