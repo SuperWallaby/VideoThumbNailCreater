@@ -1,10 +1,11 @@
 import "../css/custom.css";
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
-import { staticInfo } from "./global/static";
+import { staticInfo } from "../global/static";
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 import { checkWorkingBrowser } from "../utils/validate/checkWorkingBrowser";
+import { AppContext } from "../type/context";
 
 function MyApp({ Component, pageProps }: AppProps) {
  const { locale } = useRouter();
@@ -18,6 +19,14 @@ function MyApp({ Component, pageProps }: AppProps) {
    );
   }
  }, []);
- return <Component {...pageProps} />;
+ return (
+  <AppContext.Provider
+   value={{
+    s: s as any,
+   }}
+  >
+   <Component {...pageProps} />
+  </AppContext.Provider>
+ );
 }
 export default MyApp;
